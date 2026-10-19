@@ -1,22 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sq">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Volton | Energjia që fuqizon biznesin tuaj</title>
-<meta name="description" content="Volton – furnizim me energji elektrike në treg të lirë për biznese.">
-<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Volton SHPK – Kompani e licensuar në sektorin e energjisë</title>
+<style>
+:root{--logo:url(assets/logo.png);--mark:url(assets/mark.png);
+--g:#4f7a28;--lime:#76a346;--ink:#1a2412;--mut:#5d6853;--soft:#eef4e4;--deep:#1f3010;--line:#dfe8d2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.7 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1100px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.logo{display:block;height:44px;aspect-ratio:1053/220;background:var(--logo) no-repeat left center/contain;flex:none}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-weight:600;font-size:15px}
+nav a{color:var(--mut)}nav a:hover{color:var(--g)}
+.btn{display:inline-block;padding:13px 28px;border-radius:8px;font-weight:700;background:var(--g);color:#fff;font-size:15px;border:2px solid var(--g);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--ink);border-color:var(--ink)}
+.btn.o{background:transparent;color:var(--g)}.btn.o:hover{background:var(--g);color:#fff;border-color:var(--g)}
+.btn.w2{background:#fff;color:var(--deep);border-color:#fff}.btn.w2:hover{background:var(--soft);border-color:var(--soft)}
+.menu{display:none;background:none;border:0;font-size:26px;color:var(--ink);cursor:pointer}
+.hero{padding:90px 0 80px}
+.hero .w{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.eb{color:var(--g);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(40px,5.6vw,70px);line-height:1.08;letter-spacing:-1.5px;margin:16px 0 18px;font-weight:800}
+h1 span{color:var(--lime)}
+.hero p{font-size:21px;color:var(--mut);margin:0 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.blk{aspect-ratio:1;max-width:380px;width:100%;justify-self:center;border-radius:50%;background:var(--soft);display:grid;place-items:center;position:relative}
+.blk:before{content:"";width:62%;aspect-ratio:1;background:var(--mark) no-repeat center/contain}
+.blk:after{content:"";position:absolute;inset:-18px;border-radius:50%;border:2px dashed var(--lime);opacity:.5}
+.dv{line-height:0;height:60px}.dv svg{width:100%;height:100%;display:block}
+.band{padding:70px 0 90px}
+.soft{background:var(--soft)}.lime{background:var(--lime);color:#fff}.deep{background:var(--deep);color:#fff}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-1px;margin:10px 0 0;font-weight:800;max-width:18em}
+.sec-h{margin-bottom:44px}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.c{background:#fff;border-radius:16px;padding:32px 28px;border-bottom:4px solid var(--lime)}
+.c i{font-style:normal;font-weight:800;color:var(--lime);font-size:15px;letter-spacing:2px}
+.c h3{margin:12px 0 10px;font-size:20px;line-height:1.3}.c p{margin:0;color:var(--mut);font-size:15.5px}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
+.ab p{margin:0 0 16px;color:var(--mut)}
+.ms{margin-top:36px;padding:26px 30px;border-left:5px solid var(--lime);background:var(--soft);border-radius:0 12px 12px 0;font-size:22px;font-weight:700}
+.ms small{display:block;color:var(--g);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.lime .eb{color:#f1f8e6}.lime .in{max-width:68ch;color:#f4f9ea;margin:18px 0 0}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:44px}
+.why b{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#fff;color:var(--g);font-size:20px;margin-bottom:18px}
+.why h3{margin:0 0 8px;font-size:21px}.why p{margin:0;color:#f4f9ea}
+.fq{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-bottom:1px solid var(--line);padding:20px 0}details:first-child{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--g);font-size:26px;line-height:1}details[open] summary:after{content:"–"}
+details p{margin:12px 0 0;color:var(--mut)}
+.ct .w{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.ct .eb{color:#b9dc8a}.ct p{color:#c8d8b4;margin:16px 0 0}
+.ct .box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:30px}
+.ct .box small{display:block;color:#b9dc8a;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+.ct .box a.t{display:block;font-size:30px;font-weight:800;margin:4px 0 18px}
+.ct .box span{display:block;color:#c8d8b4;font-size:15px;margin:4px 0 22px}
+footer{background:#16240b;color:#a9bd94;padding:34px 0;font-size:14px}
+footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;flex-wrap:wrap}footer a:hover{color:#fff}
+footer .logo{filter:brightness(0) invert(1);height:38px}
+@media(max-width:860px){
+ nav{display:none;position:absolute;left:0;right:0;top:80px;background:#fff;border-bottom:1px solid var(--line);padding:16px 24px}
+ nav.open{display:block}nav ul{flex-direction:column;gap:14px}.menu{display:block}.nav>.btn{display:none}
+ .hero .w,.sv,.ab,.why,.fq,.ct .w{grid-template-columns:1fr}.hero{padding:50px 0 50px}.blk{max-width:240px}
+ .band{padding:50px 0 70px}.ab{gap:0}
+}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="container"><span>Furnizim me energji elektrike në treg të lirë</span><span>info@volton.al &nbsp; · &nbsp; Shqipëri</span></div></div>
-<header><div class="container nav"><a class="logo" href="#home" aria-label="Volton - Kreu"><span class="logo-symbol"></span>volton</a><nav id="nav"><a href="#home">Kreu</a><a href="#about">Rreth Nesh</a><a href="#services">Zgjidhjet</a><a href="#news">Lajme & Insights</a><a href="#contact">Kontakt</a></nav><a class="btn" href="#contact">Na kontaktoni <span>↗</span></a><button class="menu" aria-label="Hap menunë" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></div></header>
-<main>
-<section class="hero" id="home"><div class="container"><div class="hero-content"><div class="eyebrow">Energji për një të ardhme më të qëndrueshme</div><h1>Furnizuesi juaj i energjisë elektrike <span>në treg të lirë</span></h1><p>Volton ofron zgjidhje të sigurta dhe fleksibël për bizneset, me fokus te transparenca, kushtet e qarta dhe shërbimi i dedikuar.</p><div class="actions"><a class="btn" href="#services">Zbuloni më shumë <span>→</span></a><a class="btn ghost" href="#contact">Kërkoni ofertë</a></div></div></div></section>
-<section class="benefits"><div class="container benefit-grid"><div class="benefit"><div class="icon">ϟ</div><div><b>Çmime konkurruese</b><p>Zgjidhje të përshtatura për biznesin tuaj.</p></div></div><div class="benefit"><div class="icon">♢</div><div><b>Siguri dhe stabilitet</b><p>Furnizim dhe menaxhim profesional.</p></div></div><div class="benefit"><div class="icon">♧</div><div><b>Zgjidhje të qëndrueshme</b><p>Qasje afatgjatë ndaj energjisë.</p></div></div><div class="benefit"><div class="icon">♙</div><div><b>Ekip i dedikuar</b><p>Mbështetje dhe komunikim i drejtpërdrejtë.</p></div></div></div></section>
-<section class="section" id="about"><div class="container about"><div class="about-img"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85" alt="Ndërtesa moderne biznesi"><div class="image-note"><b>Partneritet afatgjatë</b><span>Energjia që fuqizon biznesin</span></div></div><div><div class="eyebrow">Rreth nesh</div><h2>Energjia që fuqizon biznesin tuaj</h2><p class="copy">Volton SHPK është e fokusuar te furnizimi me energji elektrike në tregun e lirë, duke ndihmuar bizneset të menaxhojnë nevojat e tyre me transparencë dhe fleksibilitet.</p><p class="copy">Ne synojmë të ndërtojmë marrëdhënie afatgjata përmes ofertave të përshtatura, komunikimit të qartë dhe një qasjeje të orientuar nga klienti.</p><ul class="ticks"><li>Oferta të përshtatura sipas profilit të konsumit</li><li>Kushte kontraktuale të qarta</li><li>Mbështetje për nevojat e biznesit</li></ul><a class="btn" href="#contact">Më shumë rreth nesh ↗</a></div></div></section>
-<section class="section services" id="services"><div class="container"><div class="section-title"><div class="eyebrow">Zgjidhjet tona</div><h2>Një gamë shërbimesh për biznesin tuaj</h2><p>Mbështetje energjetike që i përgjigjet nevojave të kompanisë suaj.</p></div><div class="cards"><article class="card"><div class="icon">ϟ</div><h3>Furnizim me energji elektrike</h3><p>Oferta dhe kontrata të përshtatura për nevojat e konsumit të biznesit.</p><a class="learn" href="#contact">Më shumë →</a></article><article class="card"><div class="icon">▤</div><h3>Kontrata fleksibël</h3><p>Kushte të qarta dhe zgjidhje që marrin parasysh kërkesat tuaja.</p><a class="learn" href="#contact">Më shumë →</a></article><article class="card"><div class="icon">⌁</div><h3>Analizë dhe raportim</h3><p>Informacion për të kuptuar më mirë profilin dhe nevojat e konsumit.</p><a class="learn" href="#contact">Më shumë →</a></article><article class="card"><div class="icon">♧</div><h3>Këshillim për efikasitet</h3><p>Qasje praktike për planifikimin dhe përdorimin efikas të energjisë.</p><a class="learn" href="#contact">Më shumë →</a></article></div></div></section>
-<section class="section stats"><div class="container stats-grid"><h2>Besimi i bizneseve<br>është energjia jonë.</h2><div class="stat"><strong>Partneritet</strong><span>Marrëdhënie afatgjata</span></div><div class="stat"><strong>Transparencë</strong><span>Kushte të qarta</span></div><div class="stat"><strong>Fleksibilitet</strong><span>Zgjidhje sipas nevojës</span></div></div></section>
-<section class="section" id="news"><div class="container"><div class="section-title"><div class="eyebrow">Lajme & Insights</div><h2>Informacion për një treg energjie në ndryshim</h2><p>Njohuri dhe këndvështrime që ndihmojnë biznesin të marrë vendime më të informuara.</p></div><div class="news-grid"><article class="news-card"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Hapësirë moderne pune"><div class="news-body"><small>Biznes & energji</small><h3>Si të planifikoni më mirë nevojat për energji</h3><p>Një qasje e strukturuar mund të ndihmojë në planifikimin e kostove dhe operacioneve.</p><a class="learn" href="#contact">Lexo më shumë →</a></div></article><article class="news-card"><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80" alt="Infrastrukturë energjetike"><div class="news-body"><small>Tregu i energjisë</small><h3>Transparenca si bazë e partneritetit</h3><p>Informacioni i qartë dhe komunikimi i hapur janë pjesë e një bashkëpunimi të mirë.</p><a class="learn" href="#contact">Lexo më shumë →</a></div></article><article class="news-card"><img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80" alt="Prodhim energjie"><div class="news-body"><small>Qëndrueshmëri</small><h3>Efikasiteti energjetik në biznes</h3><p>Vlerësimi i konsumit është një hap i dobishëm drejt vendimeve më efikase.</p><a class="learn" href="#contact">Lexo më shumë →</a></div></article></div></div></section>
-<section class="section contact" id="contact"><div class="container"><div class="section-title"><div class="eyebrow">Kontakt</div><h2>Le të flasim për nevojat tuaja</h2><p>Na shkruani për informacion ose për të diskutuar një ofertë për biznesin tuaj.</p></div><div class="contact-grid"><div class="contact-panel"><h3>Kontaktoni ekipin Volton</h3><p>Do të jemi të lumtur të diskutojmë nevojat tuaja për furnizim me energji.</p><div class="contact-detail"><span>Email</span>info@volton.al</div><div class="contact-detail"><span>Website</span>volton.al</div><div class="contact-detail"><span>Vendndodhja</span>Tiranë, Shqipëri</div><p class="notice">Ju lutemi verifikoni të dhënat zyrtare të kontaktit përpara publikimit.</p></div><form class="form" id="contactForm"><h3>Kërkoni informacion</h3><div class="field"><label for="name">Emri dhe mbiemri *</label><input id="name" name="name" required placeholder="Emri juaj"></div><div class="field"><label for="email">Email i punës *</label><input id="email" name="email" type="email" required placeholder="ju@kompania.al"></div><div class="field full"><label for="company">Kompania</label><input id="company" name="company" placeholder="Emri i kompanisë"></div><div class="field full"><label for="message">Mesazhi</label><textarea id="message" name="message" placeholder="Si mund t'ju ndihmojmë?"></textarea></div><button class="btn" type="submit">Dërgo kërkesën ↗</button><p id="formNotice" class="notice" style="grid-column:1/-1;color:#5f7477;margin:0"></p></form></div></div></section>
-</main><footer><div class="container"><div class="footer-main"><div><a class="logo" href="#home" style="color:#fff"><span class="logo-symbol"></span>volton</a><p>Energjia që fuqizon biznesin. Furnizim me energji elektrike në treg të lirë.</p></div><div class="footer-links"><a href="#about">Rreth Nesh</a><a href="#services">Zgjidhjet</a><a href="#news">Lajme & Insights</a><a href="#contact">Kontakt</a><a href="https://volton.al/">Faqja aktuale</a></div></div><div class="copyright"><span>© <span id="year"></span> Volton. Të gjitha të drejtat e rezervuara.</span><span>Privatësia &nbsp;·&nbsp; Kushtet e përdorimit</span></div></div></footer>
-<script src="js/main.js" defer></script>
-</body></html>
+<header><div class="w nav">
+ <a class="logo" href="#top" role="img" aria-label="Volton SHPK"></a>
+ <nav id="nv"><ul><li><a href="#top">Kreu</a></li><li><a href="#services">Shërbimet</a></li><li><a href="#about">Rreth Nesh</a></li><li><a href="#whyus">Përse Ne?</a></li><li><a href="#contact">Kontakt</a></li><li><a href="#">Volton Kosova</a></li></ul></nav>
+ <a class="btn" href="#contact">Kontakt</a>
+ <button class="menu" aria-label="Menu" onclick="document.getElementById('nv').classList.toggle('open')">☰</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+ <div>
+  <span class="eb">Kompani Energjitike • Volton SHPK</span>
+  <h1>Energjia juaj, <span>zgjidhja jonë</span></h1>
+  <p>Energji e qëndrueshme, çmime të garantuara!</p>
+  <div class="btns"><a class="btn" href="#services">Mëso më shumë</a><a class="btn o" href="#contact">Na kontaktoni</a></div>
+ </div>
+ <div class="blk" aria-hidden="true"></div>
+</div></div>
+
+<div class="dv" style="background:#fff"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#eef4e4" d="M0 30C240 70 480 70 720 40S1200 0 1440 30V60H0Z"/></svg></div>
+<section id="services" class="band soft"><div class="w">
+ <div class="sec-h"><div class="eb">Shërbimet tona</div><h2>Zgjidhje Energjitike të Besueshme dhe të Personalizuara</h2></div>
+ <div class="sv">
+  <div class="c"><i>01</i><h3>Furnizim me energji elektrike me kontrata me çmim fiks</h3><p>Ne lidhim kontrata njëvjeçare ose më afatgjata sipas kërkesës së klientëve. Çmimet tona mbeten të qëndrueshme pavarësisht luhatjeve në tregjet kombëtare dhe ndërkombëtare.</p></div>
+  <div class="c"><i>02</i><h3>Analizë dhe ofertim të personalizuar</h3><p>Ofrojmë analizë të detajuar dhe ofertim të personalizuar për çdo klient, duke u bazuar në profilin e konsumit dhe tipologjinë e aktivitetit të tij.</p></div>
+  <div class="c"><i>03</i><h3>Menaxhim i kapaciteteve të kërkuara</h3><p>Nëse klientët tanë kanë nevojë për rritje të kapaciteteve, ne garantojmë furnizim të qëndrueshëm dhe të pandërprerë me energji, duke siguruar vazhdimësinë e operacioneve për bizneset e tyre.</p></div>
+ </div>
+</div></section>
+
+<div class="dv" style="background:#eef4e4"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fff" d="M0 20C300 0 600 60 900 40S1300 10 1440 40V60H0Z"/></svg></div>
+<section id="about" class="band"><div class="w">
+ <div class="eb">Rreth Nesh</div><h2>Furnizuesi Juaj i Besuar i Energjisë</h2>
+ <div class="ab">
+  <div><p>Volton SHPK është një kompani e licensuar në sektorin e energjisë, e fokusuar në furnizimin me energji elektrike për subjektet e lidhura me rrjetet e tensionit 6kV, 10kV, 20kV, 35kV dhe 110kV. Me liberalizimin e tregut të energjisë, ne sjellim fleksibilitet dhe efikasitet për klientët tanë, duke garantuar çmime të qëndrueshme dhe kapacitete të përshtatura sipas nevojave të tyre.</p></div>
+  <div><p>VOLTON SHPK siguron energji elektrike nga burime të ndryshme, duke përfshirë shkëmbimet ndërkombëtare të energjisë dhe prodhuesit vendas. Ekipet tona të përkushtuara parashikojnë saktë vëllimet e konsumit vjetor dhe kërkojnë në mënyrë aktive çmimet më konkurruese në treg. Në këtë mënyrë, ne ofrojmë vlerë optimale, transparencë dhe besueshmëri për çdo klient që na beson furnizimin e energjisë.</p></div>
+ </div>
+ <div class="ms"><small>Misioni ynë</small>Energji e aksesueshme</div>
+</div></section>
+
+<div class="dv" style="background:#fff"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#76a346" d="M0 40C240 0 480 0 720 30S1200 70 1440 20V60H0Z"/></svg></div>
+<section id="whyus" class="band lime"><div class="w">
+ <div class="eb">Përse ne?</div><h2>Përse të Zgjidhni Volton SHPK?</h2>
+ <p class="in">Garantojmë qëndrueshmëri të lartë përmes bashkëpunimit me furnizues të besueshëm në tregtinë e energjisë brenda dhe jashtë vendit. Këto partneritete na mundësojnë të ofrojmë zgjidhje të personalizuara të energjisë dhe të sigurojmë një furnizim të vazhdueshëm dhe të qëndrueshëm për klientët tanë.</p>
+ <div class="why">
+  <div><b>1</b><h3>Çmime Transparente</h3><p>Pa surpriza, pa tarifa të fshehura, vetëm çmime të qarta dhe të parashikueshme, të përshtatura sipas nevojave të biznesit tuaj.</p></div>
+  <div><b>2</b><h3>Kushte dhe Terma të Qarta</h3><p>Kontratat tona janë të thjeshta dhe lehtësisht të kuptueshme, duke garantuar transparencë të plotë dhe besim të ndërsjellë. Vlerësojmë parimin e reciprocitetit në çdo marrëveshje.</p></div>
+  <div><b>3</b><h3>Shërbim i Orientuar nga Klienti</h3><p>Ne ofrojmë zgjidhje të personalizuara sipas nevojave të çdo klienti, duke garantuar fleksibilitet, komunikim proaktiv dhe mbështetje të dedikuar.</p></div>
+ </div>
+</div></section>
+
+<div class="dv" style="background:#76a346"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fff" d="M0 30C360 70 720 0 1080 30S1340 50 1440 20V60H0Z"/></svg></div>
+<section class="band"><div class="w fq">
+ <div><div class="eb">Pyetje dhe Përgjigje</div><h2>Keni pyetje rreth VOLTON SHPK?</h2></div>
+ <div>
+  <details open><summary>Si funksionojmë?</summary><p>Përmes analizave të detajuara të konsumit dhe nevojave të secilit klient, Volton SHPK është në gjendje të ofrojë zgjidhje të personalizuara dhe fleksibile që maksimizojnë efikasitetin dhe minimizojnë kostot.</p></details>
+  <details><summary>Cilat janë nivelet e tensionit të rrjetit që furnizon Volton SHPK?</summary><p>Volton SHPK furnizon energji elektrike për subjektet e lidhura me rrjetet e tensionit 6kV, 10kV, 20kV, 35kV dhe 110kV.</p></details>
+  <details><summary>Si ndihmon Volton SHPK klientët me liberalizimin e tregut të energjisë?</summary><p>Me liberalizimin e tregut të energjisë, Volton SHPK sjell fleksibilitet dhe efikasitet duke garantuar çmime të qëndrueshme dhe duke ofruar kapacitete të përshtatura sipas nevojave specifike të klientëve tanë.</p></details>
+  <details><summary>Çfarë përfitimesh ofron Volton SHPK për klientët e saj?</summary><p>Volton SHPK ofron stabilitet financiar përmes kontratave me çmim fiks, zgjidhje të personalizuara bazuar në nevojat e klientëve dhe furnizim të qëndrueshëm e pa ndërprerje.</p></details>
+ </div>
+</div></section>
+
+<div class="dv" style="background:#fff"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#1f3010" d="M0 20C240 60 600 0 900 30S1300 60 1440 30V60H0Z"/></svg></div>
+<section id="contact" class="band deep ct"><div class="w">
+ <div><div class="eb">Kontaktoni me ne</div><h2>Volton SHPK, partneri juaj i besuar për energji të qëndrueshme dhe efikase!</h2><p>Për të marrë një ofertë të personalizuar ose për më shumë informacion, na kontaktoni në:</p></div>
+ <div class="box"><small>Telefon</small><a class="t" href="tel:+355674001007">+355 67 4001 007</a><small>Adresa</small><span>Rruga Rezervat e Shtetit, Lundër 1, Tirana 1001, Tirana</span><a class="btn w2" href="https://www.google.com/maps/search/?api=1&query=41.280994,19.8623438" target="_blank" rel="noopener">Hap në hartë</a></div>
+</div></section>
+</main>
+
+<footer><div class="w">
+ <a class="logo" href="#top" role="img" aria-label="Volton SHPK"></a>
+ <ul><li><a href="#">Licenca e Furnizimit</a></li><li><a href="#">Licenca e Tregtimit</a></li><li><a href="#">Politika e Privatësisë</a></li><li><a href="#">Volton Kosova</a></li></ul>
+ <span>©Volton SHPK 2026. Të gjitha të drejtat e rezervuara.</span>
+</div></footer>
+</body>
+</html>
