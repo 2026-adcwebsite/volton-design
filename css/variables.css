@@ -1,0 +1,18 @@
+:root {
+  /* Temporary prototype palette inspired by the supplied reference.
+     Replace with official brand tokens when the designer's specifications arrive. */
+  --color-ink: #18211c;
+  --color-forest: #123b2a;
+  --color-forest-deep: #0b2118;
+  --color-green: #69a943;
+  --color-lime: #d9ff35;
+  --color-paper: #f5f6f0;
+  --color-white: #ffffff;
+  --color-muted: #aeb9b0;
+  --color-line: rgba(255,255,255,.2);
+  --font-body: "Inter", Arial, sans-serif;
+  --content-width: 1240px;
+  --page-gutter: clamp(22px, 5.5vw, 84px);
+  --radius-card: 18px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
